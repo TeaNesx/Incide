@@ -39,8 +39,8 @@ var gulp            = require('gulp'),
  * NOTE: Watch out for case-sensivity of directory names!
  */
 var modules = {
-    "bootstrap" : "node_modules/bootstrap/dist/js/bootstrap.min.js",
-    "jquery"    : "node_modules/jquery/dist/jquery.min.js"
+    "jquery"    : "node_modules/jquery/dist/jquery.min.js",
+    "slick"     : "node_modules/slick-carousel/slick/slick.min.js"
 };
 
 
@@ -69,6 +69,7 @@ gulp.task('js:build', function() {
 
     return gulp.src([
         modules["jquery"],
+        modules["slick"],
 
         inputSrc + "js/**/*.js"
         ])
@@ -78,6 +79,7 @@ gulp.task('js:build', function() {
 gulp.task('js:deploy', function() {
     return gulp.src([
         modules["jquery"],
+        modules["slick"],
 
         inputSrc + "js/**/*.js"
         ])

@@ -1,9 +1,22 @@
 // Adding Bootstrap
 @import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+//adding slick css style
+@import "../../node_modules/slick-carousel/slick/slick.css";
+
 //Adding Colors
 @import "Utillity/colors.scss";
 @import "Utillity/fonts.scss";
+@import "Utillity/buttons.scss";
 
 //Adding Header css
 @import "Partials/header.scss";
+@import "Partials/body.scss";
+
+// Adding Content 
+@import "Partials/maincontent.scss";
+@import "Partials/reportbug.scss";
+@import "Partials/contact.scss";
+
+//slides
+@import "slides/slide_1.scss";
