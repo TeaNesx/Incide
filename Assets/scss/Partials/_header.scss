@@ -1,0 +1,211 @@
+// Color
+.btn {
+    background: linear-gradient(to right, #4FB3E0, #3995D8);
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+input[type="text"]{
+    border-radius: 10px;
+    border: grey 1px solid;
+    padding: 10px;
+}
+
+#header {
+    padding-top: 15px;
+    transition: 0.3s ease-in-out;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+
+    &.active{
+        background-color: white;
+
+        .burger{
+            span{
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                    left: 10%;
+                    top: 33%;
+                }
+                &:nth-child(2){
+                    transform: rotate(-45deg);
+                    left: 9%;
+                }
+                &:nth-child(3){
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .burger {
+        background-color: white;
+        display: inline-block;
+        user-select: none;
+        padding: 10px;
+        border-radius: 100px;
+        position: absolute;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        transform: translateX(-50%);
+        margin-top: 5px;
+
+        span {
+            background: $incideblue;
+            display: block;
+            height: 3px;
+            position: relative;
+            width: 25px;
+            margin-top: 5px;
+            left: 50%;
+            top: 5%;
+            transform: translateX(-50%);
+            transition: 0.3s ease-in-out;
+        }
+    }
+
+    nav{
+        ul{
+            margin-top: 50px;
+            a{
+                text-decoration: none;
+                color: $black;
+            }
+            li{
+                margin-bottom: 10px;
+                font-size: 20px;
+
+                h2{
+                    font-size: 25px;
+                    font-weight: 700;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+#content{
+
+    .maincontent{
+        background-color: rgba(0,0,0,0.1);
+        height: 100vh;
+        position: relative;
+
+        h2{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            font-size: 140px;
+            color: white;
+            width: 100%;
+            max-width: 990px;
+            text-shadow: 0px 3px 16px rgba(150, 150, 150, 0.18);
+        }
+
+        button{
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+            max-width: 250px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &.back{
+                background: white;
+                color: #1E9AC6;
+                left: 40%;
+            }
+
+            &.next{
+                left: 60%;
+            }
+        }
+
+        .hotspots{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            img{
+                width: 100%;
+                max-width: 140px
+            }
+
+            p{
+                font-size: 40px;
+                margin-top: 10px;
+                color: #3b98d9;
+                font-weight: 600;
+            }
+        }
+
+        .image-view{
+            position: absolute;
+            top: 18%;
+            left: 16%;
+            text-align: center;
+
+            img{
+                width: 60%;
+            }
+
+            p{
+                font-size: 20px;
+                color: white;
+            }
+
+            &.active{
+                p{
+                    transition: 0.3s ease-in-out;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .text-view{
+            background: white;
+            border-radius: 10px;
+            font-size: 20px;
+            position: absolute;
+            top: 18%;
+            right: 21%;
+            width: 26%;
+
+            p{
+                padding: 10px 0;
+            }
+        }
+    }
+
+    #contact{
+        .text-view{
+            margin-top: 20vh;
+        }
+
+        input[type="text"]{
+            background: #E8E8E8;
+            border: none;
+        }
+    }
+
+    #reportbug{
+        .text-view{
+            margin-top: 20vh;
+        }
+
+        input[type="text"]{
+            background: #E8E8E8;
+            border: none;
+        }
+    }
+}
