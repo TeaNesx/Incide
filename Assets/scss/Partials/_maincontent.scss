@@ -1,6 +1,15 @@
 
 #content{
     margin-top: 30vh;
+
+    .overlayer{
+        background: black;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        opacity: 0.1;
+    }
     .maincontent{
         background-color: rgba(0,0,0,0.1);
         height: 100vh;
@@ -15,7 +24,6 @@
             color: white;
             width: 100%;
             max-width: 990px;
-            text-shadow: 0px 3px 16px rgba(150, 150, 150, 0.18);
         }
 
         button{

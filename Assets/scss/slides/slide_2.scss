@@ -1,0 +1,38 @@
+#slide_2 {
+    p {
+        font-size: 30px;
+        margin-top: 10px;
+        color: #1e9ac6;
+        font-weight: 600;
+    }
+
+    img {
+        &:not(.img-fluid) {
+            position: absolute;
+            left: 240%;
+            width: 50%;
+        }
+    }
+    .col-1{
+        &.mx-auto{
+            margin-top: 15vh;
+        }
+    }
+
+    .text {
+        position: absolute;
+        right: 7%;
+
+        .text-view {
+            background: white;
+            border-radius: 20px;
+            padding: 10px 20px;
+
+            p {
+                font-size: 21px;
+                color: black;
+                text-align: left;
+            }
+        }
+    }
+}
