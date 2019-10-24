@@ -46,6 +46,10 @@ input[type="text"]{
         transform: translateX(-50%);
         margin-top: 5px;
 
+        @include media-breakpoint-down(sm){
+            margin-top: 10px;
+        }
+
         span {
             background: $incideblue;
             display: block;
@@ -57,6 +61,15 @@ input[type="text"]{
             top: 5%;
             transform: translateX(-50%);
             transition: 0.3s ease-in-out;
+        }
+    }
+
+    a{
+        button{
+            @include media-breakpoint-down(md){
+                padding: 7px;
+                font-size: 16px;
+            }
         }
     }
 

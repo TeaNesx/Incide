@@ -1,6 +1,5 @@
 
 #content{
-    margin-top: 30vh;
 
     .overlayer{
         background: black;
@@ -9,96 +8,5 @@
         position: absolute;
         top: 0;
         opacity: 0.1;
-    }
-    .maincontent{
-        background-color: rgba(0,0,0,0.1);
-        height: 100vh;
-        position: relative;
-
-        h2{
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            top: 50%;
-            font-size: 140px;
-            color: white;
-            width: 100%;
-            max-width: 990px;
-        }
-
-        button{
-            position: absolute;
-            bottom: 10%;
-            width: 100%;
-            max-width: 250px;
-            left: 50%;
-            transform: translateX(-50%);
-
-            &.back{
-                background: white;
-                color: #1E9AC6;
-                left: 40%;
-            }
-
-            &.next{
-                left: 60%;
-            }
-        }
-
-        .hotspots{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-
-            img{
-                width: 100%;
-                max-width: 140px
-            }
-
-            p{
-                font-size: 40px;
-                margin-top: 10px;
-                color: #3b98d9;
-                font-weight: 600;
-            }
-        }
-
-        .image-view{
-            position: absolute;
-            top: 18%;
-            left: 16%;
-            text-align: center;
-
-            img{
-                width: 60%;
-            }
-
-            p{
-                font-size: 20px;
-                color: white;
-            }
-
-            &.active{
-                p{
-                    transition: 0.3s ease-in-out;
-                    font-size: 30px;
-                }
-            }
-        }
-
-        .text-view{
-            background: white;
-            border-radius: 10px;
-            font-size: 20px;
-            position: absolute;
-            top: 18%;
-            right: 21%;
-            width: 26%;
-
-            p{
-                padding: 10px 0;
-            }
-        }
     }
 }

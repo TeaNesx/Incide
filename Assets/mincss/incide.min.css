@@ -12,6 +12,9 @@ body {
   font-size: 20px;
   font-weight: 600;
   width: 100%; }
+  .btn.btn-back {
+    background: white;
+    color: #1e9ac6; }
 
 input[type="text"] {
   border-radius: 10px;
@@ -48,6 +51,9 @@ input[type="text"] {
     width: 50px;
     transform: translateX(-50%);
     margin-top: 5px; }
+    @media (max-width: 767.98px) {
+      #header .burger {
+        margin-top: 10px; } }
     #header .burger span {
       background: #1e9ac6;
       display: block;
@@ -59,6 +65,10 @@ input[type="text"] {
       top: 5%;
       transform: translateX(-50%);
       transition: 0.3s ease-in-out; }
+  @media (max-width: 991.98px) {
+    #header a button {
+      padding: 7px;
+      font-size: 16px; } }
   #header nav ul {
     margin-top: 50px; }
     #header nav ul a {
@@ -72,80 +82,22 @@ input[type="text"] {
         font-weight: 700;
         margin-bottom: 20px; }
 
-body {
-  background: url(http://localhost/incide/Assets/img/content_background.png); }
+html, body {
+  margin: 0;
+  height: 100%; }
 
-#content {
-  margin-top: 30vh; }
-  #content .overlayer {
-    background: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    opacity: 0.1; }
-  #content .maincontent {
-    background-color: rgba(0, 0, 0, 0.1);
-    height: 100vh;
-    position: relative; }
-    #content .maincontent h2 {
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      top: 50%;
-      font-size: 140px;
-      color: white;
-      width: 100%;
-      max-width: 990px; }
-    #content .maincontent button {
-      position: absolute;
-      bottom: 10%;
-      width: 100%;
-      max-width: 250px;
-      left: 50%;
-      transform: translateX(-50%); }
-      #content .maincontent button.back {
-        background: white;
-        color: #1E9AC6;
-        left: 40%; }
-      #content .maincontent button.next {
-        left: 60%; }
-    #content .maincontent .hotspots {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-      #content .maincontent .hotspots img {
-        width: 100%;
-        max-width: 140px; }
-      #content .maincontent .hotspots p {
-        font-size: 40px;
-        margin-top: 10px;
-        color: #3b98d9;
-        font-weight: 600; }
-    #content .maincontent .image-view {
-      position: absolute;
-      top: 18%;
-      left: 16%;
-      text-align: center; }
-      #content .maincontent .image-view img {
-        width: 60%; }
-      #content .maincontent .image-view p {
-        font-size: 20px;
-        color: white; }
-      #content .maincontent .image-view.active p {
-        transition: 0.3s ease-in-out;
-        font-size: 30px; }
-    #content .maincontent .text-view {
-      background: white;
-      border-radius: 10px;
-      font-size: 20px;
-      position: absolute;
-      top: 18%;
-      right: 21%;
-      width: 26%; }
-      #content .maincontent .text-view p {
-        padding: 10px 0; }
+body {
+  background: url(http://localhost/incide/Assets/img/content_background.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#content .overlayer {
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.1; }
 
 #content #reportbug .text-view {
   margin-top: 20vh; }
