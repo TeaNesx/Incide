@@ -22,10 +22,27 @@ $(document).ready(function(){
     //     });
     // });
 
-    //Move Button in DOM down
-    prev.next().insertBefore(prev);
+    // //Move Button out of parent
+
+    var slickprev = $('.single-item > .slick-prev');
+    var slicknext = $('.single-item > .slick-next');
+    
+
+    slickprev.parent().after(slickprev);
+    slicknext.parent().after(slicknext);
+
     prev.addClass('col-2 btn');
     next.addClass('col-2 btn');
+
+    //If next clicked, button html text change and display button back
+    // var i;
+    // next.on('click', function(){
+    //     next.html('Weiter');
+    //     prev.removeClass('d-none');
+    //     for(i = 0; i < 2; i++){
+    //         alert('fdsa');
+    //     }
+    // });
 
 
 });

@@ -1,12 +1,11 @@
-.single-item{
-    .slick-prev{
-        margin-left: 60vh;
-        margin-top: 20vh;
-        
-    }
+.slick-prev{
+    position: absolute;
+    right: 30%;
+    bottom: -30%;
+}
 
-    .slick-next{
-        margin-left: 10vh;
-        margin-top: 20vh;
-    }
+.slick-next{
+    position: absolute;
+    left: 30%;
+    bottom: -30%;
 }
