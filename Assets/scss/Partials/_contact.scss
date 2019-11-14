@@ -1,12 +1,21 @@
-#content{
-    #contact{
-        .text-view{
-            margin-top: 20vh;
+#contact{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    .input{
+        
+        &.bug_description{
+            height: 30vh;
+        }
+        
+        &.report_description{
+            height: 30vh;
         }
 
-        input[type="text"]{
-            background: #E8E8E8;
-            border: none;
+        &.other_description{
+            height: 30vh;
         }
     }
 }

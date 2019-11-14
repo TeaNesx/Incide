@@ -16,10 +16,12 @@ body {
     background: white;
     color: #1e9ac6; }
 
-input[type="text"] {
+.input {
+  background-color: #E8E8E8;
+  padding: 10px;
+  border: none;
   border-radius: 10px;
-  border: grey 1px solid;
-  padding: 10px; }
+  color: #454545; }
 
 #header {
   padding-top: 15px;
@@ -86,11 +88,6 @@ html, body {
   margin: 0;
   height: 100%; }
 
-body {
-  background: url(http://localhost/incide/Assets/img/content_background.png);
-  background-size: cover;
-  background-repeat: no-repeat; }
-
 #content {
   height: 100%; }
   #content .overlayer {
@@ -104,19 +101,17 @@ body {
     top: 50%;
     transform: translateY(-61%); }
 
-#content #reportbug .text-view {
-  margin-top: 20vh; }
-
-#content #reportbug input[type="text"] {
-  background: #E8E8E8;
-  border: none; }
-
-#content #contact .text-view {
-  margin-top: 20vh; }
-
-#content #contact input[type="text"] {
-  background: #E8E8E8;
-  border: none; }
+#contact {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+  #contact .input.bug_description {
+    height: 30vh; }
+  #contact .input.report_description {
+    height: 30vh; }
+  #contact .input.other_description {
+    height: 30vh; }
 
 #slide_2 p {
   font-size: 30px;

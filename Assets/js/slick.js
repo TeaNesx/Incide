@@ -35,14 +35,13 @@ $(document).ready(function(){
     next.addClass('col-2 btn');
 
     //If next clicked, button html text change and display button back
-    // var i;
-    // next.on('click', function(){
-    //     next.html('Weiter');
-    //     prev.removeClass('d-none');
-    //     for(i = 0; i < 2; i++){
-    //         alert('fdsa');
-    //     }
-    // });
+    next.on('click', function(){
+        next.html('Weiter');
+
+        // for(i = 0; i < 2; i++){
+        //     prev.removeClass('d-none');
+        // }
+    });
 
 
 });

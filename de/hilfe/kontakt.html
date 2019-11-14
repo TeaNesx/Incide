@@ -4,13 +4,8 @@
 <head>
     <title>Incide - Startseite</title>
     <meta charset="utf-8">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        type="text/css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <link href="../../Assets/scss/main.css" rel="stylesheet" type="text/css">
-    <script src="../../Assets/js/app.js"></script>
-    <script src="../../Assets/js/contact.js"></script>
+    <link href="../../Assets/mincss/incide.min.css" rel="stylesheet" type="text/css">
+    <script src="../../Assets/minjs/incide.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
@@ -104,65 +99,66 @@
         </div>
     </section>
 
-    <section id="content" class="contact_de">
-        <div id="contact" class="container">
+    <section id="contact">
+        <div class="container">
             <div class="row">
-                <div class="col-8 mx-auto text-view">
-                    <h1> Kontaktiere uns</h1>
+                <div class="col-8 mx-auto hide bug" data-select="bug">
+                    <h2>
+                        Fehler Melden
+                    </h2>
+                </div>
+                <div class="col-8 mx-auto hide report" data-select="report">
+                    <h2>
+                        Nutzer Melden
+                    </h2>
+                </div>
+                <div class="col-8 mx-auto hide other" data-select="other">
+                    <h2>
+                        Sonstiges
+                    </h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-8 mx-auto">
+                    <select id="select_contact" class="w-100 input">
+                        <option>Wieso möchtest du uns kontaktieren?</option>
+                        <option value="bug" rel="bug">Fehler Melden</option>
+                        <option value="report" rel="report">Nutzer Melden</option>
+                        <option value="other" rel="other">Sonstiges</option>
+                    </select>
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-8 mx-auto mt-5">
-                    <input class="w-100 text-center" type="text" placeholder="Weshalb möchtest du uns kontaktieren?">
+                <div class="col-8 mx-auto">
+                    <input type="text" class="input w-100 text-center mt-3" placeholder="Dein Nutzername">
                 </div>
             </div>
+        </div>
 
+        <div class="container">
             <div class="row">
-                <div class="col-8 mx-auto mt-5">
-                    <input class="w-100 text-center" type="text" placeholder="Dein Nutzername">
+                <div class="col-8 mx-auto">
+                    <input type="text" class="input w-100 text-center mt-3 hide bug bug_topic" placeholder="Wo ist der Fehler passiert">
+                    <input type="text" class="input w-100 text-center mt-3 hide report report_topic" placeholder="Welchen Nutzername hat der Nutzer?">
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-3 mx-auto mt-5">
-                    <button class="btn">
+                <div class="col-8 mx-auto">
+                    <input type="text" class="input w-100 text-center mt-3 hide bug bug_description" placeholder="Bitte erzähle so detailliert wie möglich, wie der Fehler entstanden ist.">
+                    <input type="text" class="input w-100 text-center mt-3 hide report report_description" placeholder="Bitte erzähle so detailliert wie möglich, weshalb du diesen Nutzer melden möchtest.">
+                    <input type="text" class="input w-100 text-center mt-3 hide other other_description" placeholder="Erzähle uns weshalb du uns kontaktieren möchtest.">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 mx-auto mt-3">
+                    <button type="button" class="btn">
                         Weiter
                     </button>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="content" class="reportbug_de d-none">
-        <div id="reportbug" class="container">
-
-            <div class="row">
-                <div class="col-8 mx-auto text-view ">
-                    <h1> Fehler melden</h1>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-8 mx-auto mt-5">
-                    <input class="w-100 text-center" type="text" placeholder="Weshalb möchtest du uns kontaktieren?">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-8 mx-auto mt-5">
-                    <input class="w-100 text-center" type="text" placeholder="Dein Nutzername">
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-3 mx-auto mt-5">
-                    <button class="btn">
-                        Weiter
-                    </button>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
 </body>
