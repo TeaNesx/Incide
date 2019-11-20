@@ -1,0 +1,22 @@
+#faq{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+
+    #faq_topic{
+        li{
+            cursor: pointer;
+
+            &.active{
+                font-weight: bold;
+            }
+        }
+    }
+
+    #faq_description{
+        p{
+            font-weight: normal;
+        }
+    }
+}

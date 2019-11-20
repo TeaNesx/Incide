@@ -1,5 +1,5 @@
-@import url(../../node_modules/bootstrap/dist/css/bootstrap.min.css);
-@import url(../../node_modules/slick-carousel/slick/slick.css);
+@import url(../../../node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(../../../node_modules/slick-carousel/slick/slick.css);
 body {
   font-family: 'roboto', sans-serif; }
 

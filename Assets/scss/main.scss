@@ -1,11 +1,11 @@
 // Adding Bootstrap
-@import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
 //adding slick css style
-@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../../node_modules/slick-carousel/slick/slick.css";
 
 //Adding Colors
 @import "Utillity/colors.scss";
@@ -20,6 +20,7 @@
 // Adding Content 
 @import "Partials/maincontent.scss";
 @import "Partials/contact.scss";
+@import "Partials/faq.scss";
 
 //slides
 @import "slides/slide_2.scss";

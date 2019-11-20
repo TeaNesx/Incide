@@ -28,7 +28,7 @@ var gulp            = require('gulp'),
  * Configurations
  */
     inputSrc = 'Assets/';
-    outputSrc = 'Assets/min';
+    outputSrc = 'Assets/public/';
     fileName = 'incide.min';
 
 
